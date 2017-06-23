@@ -1,0 +1,10 @@
+ls > names
+nano names
+chmod 755 renaming.sh
+while read f ; do ./renaming.sh "$f" ; done < names
+HFMAC03:all_reads ckidner$ ls *.gz > files
+HFMAC03:all_reads ckidner$ imkdir Ceiba
+HFMAC03:all_reads ckidner$ while read f ; do iput -bXfV "$f" Ceiba/ ; done < files
+
+Done 21st June 2017
+
